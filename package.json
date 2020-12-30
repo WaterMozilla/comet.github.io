@@ -1,0 +1,26 @@
+{
+  "name": "comet",
+  "version": "1.0.0",
+  "description": "#### 保证：   - 每个UI组件都一个完整的模块，都有自己独立的目录结构，  - 每个组件都可以被独立引用  - 每个组件都要覆盖单元测试 jest enzyme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaterMozilla/comet.git"
+  },
+  "keywords": [
+    "component",
+    "library"
+  ],
+  "author": "Doubao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WaterMozilla/comet/issues"
+  },
+  "homepage": "https://github.com/WaterMozilla/comet#readme"
+}
