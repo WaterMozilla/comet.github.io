@@ -11,7 +11,7 @@
       "mode": "light"
     },
     "separator": "-",
-    "typescript": false,
+    "typescript": true,
     "theme": "/Users/didi/Desktop/Luffy/cometUi/comet/node_modules/docz-theme-umi/es/index.js",
     "base": "/doubao",
     "plugins": [
@@ -24,6 +24,7 @@
       {}
     ]
   },
+  "props": [],
   "entries": [
     {
       "key": "src/components/Button/index.mdx",
@@ -56,6 +57,5 @@
         ]
       }
     }
-  ],
-  "props": []
+  ]
 }

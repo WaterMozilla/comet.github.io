@@ -1,0 +1,1 @@
+{"src/index.tsx":{"hash":"585aee4760f75fb3a2103b998794dd74","props":[{"description":"","displayName":"src","methods":[],"props":{"size":{"defaultValue":null,"description":"","name":"size","parent":{"fileName":"src/index.tsx","name":"ButtonProps"},"required":false,"type":{"name":"\"small\" | \"big\" | \"default\" | undefined"}}}}]}}

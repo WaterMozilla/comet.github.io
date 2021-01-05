@@ -2,14 +2,18 @@ module.exports = {
     extends: ['eslint-config-umi'],
     // extends: ['eslint-config-umi', 'prettier'],
     // plugins: ['prettier'],
-    // todo 不添加有什么问题吗?
+    // env 指定代码的运行环境 example: console只有在浏览器下才能正常使用
     env: {
         browser: true,
         node: true,
     },
-    // parser: 'babel-eslint',
+    parser: 'babel-eslint',
+    // 除ts 之外的文件使用babel-eslint,TS文件使用overrides重写,重复的内容会优先以重写的为主
+    // parser: ['@typescript-eslint/parser','babel-eslint'],
+    // plugins: '@typescript-eslint/eslint-plugin',
     overrides: [
         {
+            // files: ['**/*.ts?(x)'],
             files: ['*.ts?(x)'],
             parser: '@typescript-eslint/parser',
             parserOptions: {
@@ -21,11 +25,13 @@ module.exports = {
                 warnOnUnsupportedTypeScriptVersion: true,
             },
             plugins: ['@typescript-eslint'],
-            rules: {},
+            rules: {
+                'no-var': 'error',
+            },
         },
     ],
     rules: {
-        semi: 1,
+        semi: ['error', 'always'],
         'max-len': ['error', 140], // 增加了每一行的最大字符数
         indent: ['error', 4], // 统一缩进为4个空格。4个空格可以带来更明显的缩进效果，从而使代码更具层次，
         'no-plusplus': ['off'], // 允许使用++运算符
@@ -71,4 +77,12 @@ module.exports = {
         'react/jsx-boolean-value': ['off'],
         // 'prettier/prettier': 'error',
     },
-}
+    settings: {
+        'import/resolver': {
+            alias: {
+                map: [['@', './src/']],
+            },
+            typescript: {},
+        },
+    },
+};
