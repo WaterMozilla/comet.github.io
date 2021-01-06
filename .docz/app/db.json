@@ -24,7 +24,29 @@
       {}
     ]
   },
-  "props": [],
+  "props": [
+    {
+      "key": "src/components/Button/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Button",
+          "methods": [],
+          "props": {
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": false,
+              "type": {
+                "name": "\"small\" | \"big\" | \"default\" | undefined"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
   "entries": [
     {
       "key": "src/components/Button/index.mdx",

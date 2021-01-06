@@ -31,6 +31,7 @@ module.exports = {
         },
     ],
     rules: {
+        // quotes: [1, "double"],
         semi: ['error', 'always'],
         'max-len': ['error', 140], // 增加了每一行的最大字符数
         indent: ['error', 4], // 统一缩进为4个空格。4个空格可以带来更明显的缩进效果，从而使代码更具层次，

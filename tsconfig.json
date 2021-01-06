@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "esnext",
-		"module": "esnect",
+		"module": "esnext",
 		"experimentalDecorators": true,
 		"moduleResolution": "node",
 		"importHelpers": true,

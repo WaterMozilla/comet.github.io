@@ -16,3 +16,6 @@
 
 # vim
 *.swp
+
+# docz
+.docz
