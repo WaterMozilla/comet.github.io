@@ -6,7 +6,6 @@ export interface ButtonProps {
 }
 export interface ButtonState {}
 export default class Button extends React.Component<ButtonProps, ButtonState> {
-    console.log('have a test...');
     render() {
         return (<div className="wrap"><button className="test">测试ing</button></div>);
     }
