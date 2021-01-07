@@ -1,7 +1,11 @@
 module.exports = {
+    // extends: ['eslint-config-umi','plugin:prettier/recommended'],
     extends: ['eslint-config-umi'],
-    // extends: ['eslint-config-umi', 'prettier'],
     // plugins: ['prettier'],
+    // extends:[ 
+    //     'prettier/@typescript-eslint',
+    //     'plugin:prettier/recommended'
+    // ],
     // env 指定代码的运行环境 example: console只有在浏览器下才能正常使用
     env: {
         browser: true,
