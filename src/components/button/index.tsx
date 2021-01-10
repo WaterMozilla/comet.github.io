@@ -1,5 +1,6 @@
 /** UI组件源文件，包含整个组件的内容和逻辑 */
 import React from "react";
+// import * as MyButton from 'comet-ui-doubao';
 import * as PropTypes from 'prop-types';
 import './index.less';
 
@@ -24,7 +25,10 @@ export default class Button extends React.Component<IButtonProps, IButtonState> 
     }
     render() {
         const { children, type } = this.props;
-        return <button className={`coment-btn coment-btn-${type}`}>{children}</button>;
+        return <>
+            <button className={`comet-btn comet-btn-${type}`}>{children}</button>;
+            {/* <MyButton type="primary">我的按钮啊</MyButton> */}
+        </>;
     }
 }
 // hook 写法
