@@ -39,7 +39,16 @@
               "name": "size",
               "required": false,
               "type": {
-                "name": "\"small\" | \"big\" | \"default\" | undefined"
+                "name": "string | undefined"
+              }
+            },
+            "type": {
+              "defaultValue": null,
+              "description": "",
+              "name": "type",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
               }
             }
           }
