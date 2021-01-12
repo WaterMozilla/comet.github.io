@@ -1,7 +1,8 @@
 /** UI组件源文件，包含整个组件的内容和逻辑 */
 import React from "react";
 // import * as MyButton from 'comet-ui-doubao';
-import * as PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import './index.less';
 
 const ButtonTypes = ["default","primary"];
@@ -12,21 +13,43 @@ export interface IButtonProps {
     size?: ButtonSize;
     type?: ButtonType;
     children?: React.ReactNode;
+    prefixCls?: string;
+    className?: string;
+    disabled?: boolean;
 };
 export interface IButtonState {};
 // class 写法
 export default class Button extends React.Component<IButtonProps, IButtonState> {
     static defaultProps: {
-        // default: boolean;
+        prefixCls: 'comet-btn';
+        type: 'default';
+        size: 'small';
     }
     static propTypes: {
         type: PropTypes.Requireable<string>;
-        size: PropTypes.Requireable<"small" | "default" | "large">;
+        size: PropTypes.Requireable<"small" | "large">;
     }
     render() {
-        const { children, type } = this.props;
+        const { disabled, prefixCls, className, children, type, size } = this.props;
+        let sizeCls = '';
+        switch(size) {
+        case 'large':
+            sizeCls = 'lg';
+            break;
+        case 'small':
+            sizeCls = 'sm';
+            break;
+        default:
+            sizeCls = '';
+            break;
+        }
+        // 构建类
+        const classes = classNames(prefixCls,className, {
+            [`${prefixCls}-${type}`]: type,
+            [`${prefixCls}-${sizeCls}`]: sizeCls,
+        });
         return <>
-            <button className={`comet-btn comet-btn-${type}`}>{children}</button>;
+            <button disabled={disabled} className={classes}>{children}</button>;
             {/* <MyButton type="primary">我的按钮啊</MyButton> */}
         </>;
     }

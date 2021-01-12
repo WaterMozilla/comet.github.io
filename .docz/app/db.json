@@ -50,6 +50,33 @@
               "type": {
                 "name": "string | undefined"
               }
+            },
+            "prefixCls": {
+              "defaultValue": null,
+              "description": "",
+              "name": "prefixCls",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "disabled": {
+              "defaultValue": null,
+              "description": "",
+              "name": "disabled",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
             }
           }
         }
