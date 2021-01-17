@@ -7,7 +7,7 @@ const options = {
     },
     extraBabelPlugins: [
         ['babel-plugin-import', {
-            libraryName: 'doubao',
+            libraryName: 'antd',
             libraryDirectory: 'es',
             style: true,
         }]
