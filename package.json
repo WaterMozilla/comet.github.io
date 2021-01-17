@@ -2,7 +2,6 @@
   "name": "comet-ui-doubao",
   "version": "1.0.2",
   "description": "#### 保证：   - 每个UI组件都一个完整的模块，都有自己独立的目录结构，  - 每个组件都可以被独立引用  - 每个组件都要覆盖单元测试 jest enzyme",
-  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -39,6 +38,13 @@
     "pre-commit": "^1.2.2",
     "prettier": "^2.2.1"
   },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WaterMozilla/comet.git"
