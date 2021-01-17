@@ -1,1 +1,1 @@
-// 欢迎来到这里;
+export { default as Button } from './components/Button';
