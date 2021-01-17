@@ -20,14 +20,14 @@ export interface IButtonProps {
 export interface IButtonState {};
 // class 写法
 export default class Button extends React.Component<IButtonProps, IButtonState> {
-    static defaultProps: {
-        prefixCls: 'comet-btn';
-        type: 'default';
-        size: 'small';
+    static defaultProps = {
+        prefixCls: 'comet-btn',
+        type: 'default',
+        size: 'small',
     }
-    static propTypes: {
-        type: PropTypes.Requireable<string>;
-        size: PropTypes.Requireable<"small" | "large">;
+    static propTypes = {
+        type: PropTypes.string,
+        size: PropTypes.string,
     }
     render() {
         const { disabled, prefixCls, className, children, type, size } = this.props;
@@ -49,7 +49,7 @@ export default class Button extends React.Component<IButtonProps, IButtonState> 
             [`${prefixCls}-${sizeCls}`]: sizeCls,
         });
         return <>
-            <button disabled={disabled} className={classes}>{children}</button>;
+            <button disabled={disabled} className={classes}>{children}</button>
             {/* <MyButton type="primary">我的按钮啊</MyButton> */}
         </>;
     }
