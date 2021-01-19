@@ -1,9 +1,9 @@
 const options = {
     entry: 'src/index.js',
     doc: {
-      title: 'doubao',
+      title: 'comet',
       themeConfig: { mode: 'light' },
-      base: '/doubao'
+      base: '/'
     },
     extraBabelPlugins: [
         ['babel-plugin-import', {
