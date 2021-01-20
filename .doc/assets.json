@@ -1,8 +1,8 @@
 {
-  "vendors.css": "/comet.ui.doubao/static/css/vendors.fec266ac47ba46d536f4.css",
-  "vendors.js": "/comet.ui.doubao/static/js/vendors.77fe7f5e.js",
-  "app.js": "/comet.ui.doubao/static/js/app.fec266ac47ba46d536f4.js",
-  "src-components-button-index.css": "/comet.ui.doubao/static/css/src-components-button-index.fec266ac47ba46d536f4.css",
-  "src-components-button-index.js": "/comet.ui.doubao/static/js/src-components-button-index.77f2f712.js",
-  "index.html": "/comet.ui.doubao/index.html"
+  "vendors.css": "/comet.github.io/static/css/vendors.2a26ec1d26e4337401f5.css",
+  "vendors.js": "/comet.github.io/static/js/vendors.7e83bb07.js",
+  "app.js": "/comet.github.io/static/js/app.2a26ec1d26e4337401f5.js",
+  "src-components-button-index.css": "/comet.github.io/static/css/src-components-button-index.2a26ec1d26e4337401f5.css",
+  "src-components-button-index.js": "/comet.github.io/static/js/src-components-button-index.77f2f712.js",
+  "index.html": "/comet.github.io/index.html"
 }
