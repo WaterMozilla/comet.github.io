@@ -1,8 +1,8 @@
 {
-  "vendors.css": "/doubao/static/css/vendors.97f32b9ff812fc28a1f7.css",
-  "vendors.js": "/doubao/static/js/vendors.cfdaaaa0.js",
-  "app.js": "/doubao/static/js/app.97f32b9ff812fc28a1f7.js",
-  "src-components-button-index.css": "/doubao/static/css/src-components-button-index.97f32b9ff812fc28a1f7.css",
-  "src-components-button-index.js": "/doubao/static/js/src-components-button-index.77f2f712.js",
-  "index.html": "/doubao/index.html"
+  "vendors.css": "/comet-ui-doubao/static/css/vendors.6e105ab3cd15747981f3.css",
+  "vendors.js": "/comet-ui-doubao/static/js/vendors.87e9d260.js",
+  "app.js": "/comet-ui-doubao/static/js/app.6e105ab3cd15747981f3.js",
+  "src-components-button-index.css": "/comet-ui-doubao/static/css/src-components-button-index.6e105ab3cd15747981f3.css",
+  "src-components-button-index.js": "/comet-ui-doubao/static/js/src-components-button-index.77f2f712.js",
+  "index.html": "/comet-ui-doubao/index.html"
 }
