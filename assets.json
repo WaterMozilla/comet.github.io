@@ -1,8 +1,8 @@
 {
-  "vendors.css": "/doubao/static/css/vendors.565103d5d0d229873120.css",
-  "vendors.js": "/doubao/static/js/vendors.29b56d61.js",
-  "app.js": "/doubao/static/js/app.565103d5d0d229873120.js",
-  "src-components-button-index.css": "/doubao/static/css/src-components-button-index.565103d5d0d229873120.css",
-  "src-components-button-index.js": "/doubao/static/js/src-components-button-index.b67da9ed.js",
-  "index.html": "/doubao/index.html"
+  "vendors.css": "/static/css/vendors.7b28b574351dc0665661.css",
+  "vendors.js": "/static/js/vendors.ddd3135c.js",
+  "app.js": "/static/js/app.7b28b574351dc0665661.js",
+  "src-components-button-index.css": "/static/css/src-components-button-index.7b28b574351dc0665661.css",
+  "src-components-button-index.js": "/static/js/src-components-button-index.77f2f712.js",
+  "index.html": "/index.html"
 }
