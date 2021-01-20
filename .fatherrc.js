@@ -3,7 +3,12 @@ const options = {
     doc: {
       title: 'comet',
       themeConfig: { mode: 'light' },
-      base: '/'
+      base: '/',
+      htmlContext: {
+          head: {
+              favicon: '/assets/favicon.ico',
+          }
+      }
     },
     extraBabelPlugins: [
         ['babel-plugin-import', {
