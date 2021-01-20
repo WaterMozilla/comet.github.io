@@ -3,7 +3,7 @@ const options = {
     doc: {
       title: 'comet',
       themeConfig: { mode: 'light' },
-      base: '/',
+      base: '/doubao',
       htmlContext: {
           head: {
               favicon: '/assets/favicon.ico',
