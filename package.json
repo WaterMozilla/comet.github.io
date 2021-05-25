@@ -69,6 +69,7 @@
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@types/classnames": "^2.2.11",
+    "async-validator": "^3.5.2",
     "babel-plugin-import": "^1.13.3",
     "classnames": "^2.2.6",
     "gulp-less": "^4.0.1",
