@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FormCreate from './FormCreate';
-
+import Button from '../Button';
+import './index.less';
 function Form(props:any) {
     // const [value, setValue] = useState('1');
     const { form } = props;
@@ -31,9 +32,9 @@ function Form(props:any) {
                 },
             }) } /><br/><br/>
             <div {...getFieldsErrors('age')}></div><br/><br/>
-            <button onClick={e => {
+            <Button type="primary" onClick={() => {
                 console.log(getFieldsValue());
-            }}>提交</button>
+            }}>提交</Button>
         </div>
     );
 }

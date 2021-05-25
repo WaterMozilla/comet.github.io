@@ -16,6 +16,7 @@ export interface IButtonProps {
     prefixCls?: string;
     className?: string;
     disabled?: boolean;
+    onClick?: () => void;
 };
 export interface IButtonState {};
 // class 写法
@@ -28,9 +29,10 @@ export default class Button extends React.Component<IButtonProps, IButtonState> 
     static propTypes = {
         type: PropTypes.string,
         size: PropTypes.string,
+        onClick: PropTypes.func,
     }
     render() {
-        const { disabled, prefixCls, className, children, type, size } = this.props;
+        const { onClick, disabled, prefixCls, className, children, type, size } = this.props;
         let sizeCls = '';
         switch(size) {
         case 'large':
@@ -49,7 +51,7 @@ export default class Button extends React.Component<IButtonProps, IButtonState> 
             [`${prefixCls}-${sizeCls}`]: sizeCls,
         });
         return <>
-            <button disabled={disabled} className={classes}>{children}</button>
+            <button onClick={onClick} disabled={disabled} className={classes}>{children}</button>
             {/* <MyButton type="primary">我的按钮啊</MyButton> */}
         </>;
     }
