@@ -19,7 +19,6 @@
     "@typescript-eslint/eslint-plugin": "^4.11.1",
     "@typescript-eslint/parser": "^4.12.0",
     "babel-eslint": "^10.1.0",
-    "comet-ui-doubao": "^1.0.1",
     "docz": "^2.3.1",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
@@ -73,6 +72,7 @@
     "babel-plugin-import": "^1.13.3",
     "classnames": "^2.2.6",
     "gulp-less": "^4.0.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

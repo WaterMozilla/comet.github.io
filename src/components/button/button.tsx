@@ -1,7 +1,8 @@
 /** UI组件源文件，包含整个组件的内容和逻辑 */
 import React from "react";
 // import * as MyButton from 'comet-ui-doubao';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types'; {string:xxx,func: xxx}
+import * as PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './index.less';
 
@@ -16,7 +17,8 @@ export interface IButtonProps {
     prefixCls?: string;
     className?: string;
     disabled?: boolean;
-    onClick?: () => void;
+    onClick?: React.MouseEventHandler<HTMLElement>;
+    // onClick?: () => void;
 };
 export interface IButtonState {};
 // class 写法
@@ -31,6 +33,13 @@ export default class Button extends React.Component<IButtonProps, IButtonState> 
         size: PropTypes.string,
         onClick: PropTypes.func,
     }
+
+    handleClick: React.MouseEventHandler<HTMLElement> = e => {
+        console.log('click button here');
+    }
+    // handleClick = () => {
+
+    // }
     render() {
         const { onClick, disabled, prefixCls, className, children, type, size } = this.props;
         let sizeCls = '';

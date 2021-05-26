@@ -1,9 +1,14 @@
 const options = {
     entry: 'src/index.js',
     doc: {
-      title: 'doubao',
+      title: 'comet',
       themeConfig: { mode: 'light' },
-      base: '/doubao'
+      base: '/comet.github.io',
+      htmlContext: {
+          head: {
+              favicon: '/assets/favicon.ico',
+          }
+      }
     },
     extraBabelPlugins: [
         ['babel-plugin-import', {
